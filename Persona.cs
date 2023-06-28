@@ -18,7 +18,7 @@ namespace GrupoTranspaisDanielTorres
         {
             foreach (var persona in personas)
             {
-                if (!Existe(persona))
+                if (true)//!Existe(persona)
                 {
                     Conexion.InsertarPersona(persona);
                 }
