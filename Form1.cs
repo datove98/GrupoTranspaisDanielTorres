@@ -29,14 +29,22 @@ namespace GrupoTranspaisDanielTorres
         {
             List<Persona> Personas = new List<Persona>();
             Persona persona = new Persona();
-            if (!string.IsNullOrEmpty(txtUrl.Text))
+            try
             {
-                Personas = Archivo.ObtenerInfo(txtUrl.Text);
-                persona.GuardarInfo(Personas);
+                if (!string.IsNullOrEmpty(txtUrl.Text))
+                {
+                    Personas = Archivo.ObtenerInfo(txtUrl.Text);
+                    persona.GuardarInfo(Personas);
+                    MessageBox.Show("Guardado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un archivo de su equipo");
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Seleccione un archivo de su equipo");
+                MessageBox.Show(e.Message);
             }
         }
 

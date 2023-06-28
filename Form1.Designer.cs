@@ -83,7 +83,7 @@
             Controls.Add(label1);
             Controls.Add(btnCargar);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Cargar Excel";
             ResumeLayout(false);
             PerformLayout();
         }
