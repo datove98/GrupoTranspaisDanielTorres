@@ -32,6 +32,7 @@
             label1 = new Label();
             txtUrl = new TextBox();
             btnGuardar = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // btnCargar
@@ -73,11 +74,22 @@
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Bottom;
+            label2.AutoSize = true;
+            label2.Location = new Point(40, 206);
+            label2.Name = "label2";
+            label2.Size = new Size(304, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Actualizar cadena de conexion en el archivo conexion.cs";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(595, 230);
+            Controls.Add(label2);
             Controls.Add(btnGuardar);
             Controls.Add(txtUrl);
             Controls.Add(label1);
@@ -94,5 +106,6 @@
         private Label label1;
         private TextBox txtUrl;
         private Button btnGuardar;
+        private Label label2;
     }
 }

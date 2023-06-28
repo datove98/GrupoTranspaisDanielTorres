@@ -5,7 +5,9 @@ namespace GrupoTranspaisDanielTorres
 {
     internal class Conexion
     {
-        private const string CONNECTION_STRING = "Integrated Security=SSPI;Initial Catalog=GrupoTranspaisDaniel;Data Source=DANIEL-PC;TrustServerCertificate=True;";
+        //TODO Cambiar la cadena de conexion
+        //private const string CONNECTION_STRING = "Integrated Security=SSPI;Initial Catalog=GrupoTranspaisDaniel;Data Source=DANIEL-PC;TrustServerCertificate=True;";
+        private const string CONNECTION_STRING = "";
         public Conexion() { }
 
         private static SqlConnection Connect()
